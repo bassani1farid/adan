@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+      <link rel="stylesheet" href="c.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أوقات الصلاة</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <img src="mosque.png" alt="مسجد" class="header-img">
+    <h1>أوقات الصلاة</h1>
+    <div id="location">جاري تحديد الموقع...</div>
+    <div id="date"></div>
+    <div id="loading">يرجى الانتظار...</div>
+    <table id="prayer-times" style="display:none;">
+      <thead>
+        <tr>
+          <th>الصلاة</th>
+          <th>الوقت</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>الفجر</td><td id="Fajr"></td></tr>
+        <tr><td>الظهر</td><td id="Dhuhr"></td></tr>
+        <tr><td>العصر</td><td id="Asr"></td></tr>
+        <tr><td>المغرب</td><td id="Maghrib"></td></tr>
+        <tr><td>العشاء</td><td id="Isha"></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="c.js"></script>
+</body>
+</html>
